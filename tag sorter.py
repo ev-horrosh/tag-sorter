@@ -13,8 +13,8 @@ def open_tags():
     name = os.path.splitext(filename)[0]+'_sorted.txt'
     print(path+name)
 
-    with open(filepath, 'r') as list_of_tags:
-        with open(path + '\\' + name, 'w') as list_of_sorted_tags:
+    with open(filepath, 'r', encoding="utf-8") as list_of_tags:
+        with open(path + '\\' + name, 'w', encoding="utf-8") as list_of_sorted_tags:
             tags = list_of_tags.readlines()
             words_no = []
 
