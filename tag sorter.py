@@ -5,6 +5,8 @@ from tkinter import filedialog
 
 root = Tk().withdraw()
 
+# opens txt
+
 
 def open_tags():
     filepath = filedialog.askopenfilename(title="Select txt")
